@@ -1,0 +1,28 @@
+.classDates-list{
+    display: grid;
+    justify-content: left;
+    margin-left: 40px;
+    padding-top: 80px;
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+
+.classDates-list h3{
+   justify-self: center;
+   
+}
+
+.classDates-list p{
+    margin: 15px;
+    border-bottom: 2px solid green;
+    font-weight: 500;
+    cursor: default;
+    transition: font-size 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.classDates-list p:hover{
+    cursor:pointer;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

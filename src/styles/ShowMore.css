@@ -1,0 +1,76 @@
+.showMore-parent{
+    height: auto;
+    /* display: flex;
+    flex-direction: column;     */
+}
+
+.showMore-categories{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    
+    
+    p{
+        display: flex;
+        justify-content: left;
+        font-size: 12px;
+        font-weight: 700;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    
+    
+}
+
+
+.showNotes-parent{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    border-top: 2px solid green;
+}
+
+label{
+    font-size: 15px;
+}
+
+#commenter-name{
+    margin: 5px;
+}
+
+#comment{
+    margin: 5px;
+}
+
+.addNote{
+    border: 2px solid green;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+form{
+    margin: 8px;
+}
+
+
+.addNote-button{
+    border: none;
+    background-color: green;
+    font-size: small;
+    color: white;
+    padding: 10px;
+
+}
+
+.new-comments{
+    padding-left: 5px;
+    margin: 2px;
+    font-size: 12px;
+}

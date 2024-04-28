@@ -1,0 +1,61 @@
+
+.student-card{
+    height: auto;
+    border: 2px solid green;
+    margin-top: 40px;
+    padding: 8px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card-default{
+    display: flex;
+}
+
+.student-photo img{
+    width: 130px;
+    height: 130px;
+}
+
+.studentInfo-list{
+  padding: 15px;
+    width: 350px;
+}
+
+p{
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.student-name{
+    font-size: large;
+    font-weight: 700;
+  
+}
+
+.button-showMore{
+        border: none;
+        background: none;
+        margin-top: 10px;
+        margin-right: 100px;
+        font-size: 14px;
+
+}
+
+#onTrack{
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+
+    
+    
+
+
+/* 
+.student-card:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    scale: 1.01;
+} */
