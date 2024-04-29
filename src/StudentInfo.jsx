@@ -8,6 +8,8 @@ function StudentInfo({data, cohortTerm}) {
     
     const totalStudents = data.length
     const formattedCohortTerm = cohortTerm.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+
     const studentData = data.map((student, idx) => {
         return (
             <StudentCard key = {idx} student = {student} />

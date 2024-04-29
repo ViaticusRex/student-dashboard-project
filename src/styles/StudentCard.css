@@ -35,6 +35,10 @@ p{
   
 }
 
+.student-dob{
+    font-size: 14px;
+}
+
 .button-showMore{
         border: none;
         background: none;
@@ -44,18 +48,17 @@ p{
 
 }
 
+.button-showMore:hover{
+    cursor: pointer;
+}
+
 #onTrack{
     margin-left: 40px;
     font-size: 12px;
 }
 
 
-    
-    
-
-
-/* 
 .student-card:hover{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    scale: 1.01;
-} */
+    scale: 1.02;
+}

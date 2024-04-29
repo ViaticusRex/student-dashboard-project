@@ -1,12 +1,10 @@
 .showMore-parent{
     height: auto;
-    /* display: flex;
-    flex-direction: column;     */
 }
 
 .showMore-categories{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     justify-content: space-evenly;
     
@@ -16,14 +14,17 @@
         justify-content: left;
         font-size: 12px;
         font-weight: 700;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     
     
     
 }
 
+#category{
+    margin-right: 4px;
+}
 
 .showNotes-parent{
     margin-top: 10px;
@@ -63,10 +64,14 @@ form{
 .addNote-button{
     border: none;
     background-color: green;
-    font-size: small;
+    font-size: 11px;
     color: white;
-    padding: 10px;
+    padding: 6px;
 
+}
+
+.addNote-button:hover{
+    cursor: pointer;
 }
 
 .new-comments{

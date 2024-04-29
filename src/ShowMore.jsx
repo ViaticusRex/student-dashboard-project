@@ -7,7 +7,7 @@ function ShowMore({student}) {
     const scoreGoal = student.codewars.goal.total
 
     const targetGoal = Math.floor(currentTotal/scoreGoal * 100)
-    const scorePercents = student.cohort.scores
+    // const scorePercents = student.cohort.scores
     
     
 
@@ -36,25 +36,29 @@ function ShowMore({student}) {
         <div className="showMore-categories">
             <div className="codeWars">
                 <h5>CodeWars</h5>
-                <p><span>Current Total: </span>{currentTotal}</p>
-                <p><span>Last Week: </span>{student.codewars.current.lastWeek}</p>
-                <p><span>Goal: </span>{scoreGoal}</p>
-                <p><span>Progress: </span>{targetGoal}%</p>
+                <p><span id='category'>Current Total: </span>{currentTotal}</p>
+                <p><span id='category'>Last Week: </span>{student.codewars.current.lastWeek}</p>
+                <p><span id='category'>Goal: </span>{scoreGoal}</p>
+                <p><span id='category'>Progress: </span>{targetGoal}%</p>
             </div>
 
             <div className="scores">
                 <h5>Scores</h5>
-                <p><span>Assignments: </span>{scorePercents.assignments}%</p>
-                <p><span>Projects: </span>{scorePercents.projects}%</p>
-                <p><span>Assessments: </span>{scorePercents.assessments}%</p>
+                <p><span id='category'>Assignments: </span>{student.cohort.scores.assignments * 100}%</p>
+                <p><span id='category'>Projects: </span>{student.cohort.scores.projects * 100}%</p>
+                <p><span id='category'>Assessments: </span>{student.cohort.scores.assessments * 100}%</p>
             </div>
 
             <div className="certifications">
                 <h5>Certifications</h5>
-                <p><span>Resume: </span>{student.certifications.resume}</p>
-                <p><span>LinkedIn: </span>{student.certifications.linkedin}</p>
-                <p><span>Mock Interview: </span>{student.certifications.github}</p>
-                <p><span>GitHub: </span>{student.certifications.mockInterview}</p>
+                <p><span id='category'>Resume: </span>{student.certifications.resume}
+                {student.certifications.resume ? '✅' : '❌'}</p>
+                <p><span id='category'>LinkedIn: </span>{student.certifications.linkedin}
+                {student.certifications.linkedIn ? '✅' : '❌'}</p>
+                <p><span id='category'>Mock Interview: </span>{student.certifications.github}
+                {student.certifications.github ? '✅' : '❌'}</p>
+                <p><span id='category'>GitHub: </span>{student.certifications.mockInterview}
+                {student.certifications.mockInterview ? '✅' : '❌'}</p>
             </div>
             
         </div> 
@@ -66,7 +70,7 @@ function ShowMore({student}) {
             <div className='addNote'>
                 <div>
                     <form onSubmit={addNewNote}>
-                        <label>Username</label>
+                        <label>Instructor</label>
                         <input type='text' id='commenter-name' name='commenter-name'/>
                             
                         <br />
@@ -78,6 +82,14 @@ function ShowMore({student}) {
 
                     </form>
                 </div>
+
+                {/* <div className="existingNotes">
+                    <p>
+                    //maybe to put the existing comments?
+                    </p>
+                </div> */}
+
+
 
                 {note.map((note) => (
                         <div className='new-comments' key={note.id}>
