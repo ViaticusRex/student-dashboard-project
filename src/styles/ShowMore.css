@@ -35,16 +35,13 @@
     border-top: 2px solid green;
 }
 
-label{
-    font-size: 15px;
-}
 
 #commenter-name{
     margin: 5px;
 }
 
 #comment{
-    margin: 5px;
+    margin: 6px;
 }
 
 .addNote{
@@ -53,8 +50,21 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+}
+
+.addNote label{
+    font-size: 15px;
+    margin-right: 4px;
 
 }
+
+.addNote input{
+    min-width: 150px;
+    width: fit-content;
+
+}
+
 
 form{
     margin: 8px;

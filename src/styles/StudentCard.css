@@ -53,12 +53,17 @@ p{
 }
 
 #onTrack{
-    margin-left: 40px;
+    display: flex;
     font-size: 12px;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 8px;
+    
 }
 
 
-.student-card:hover{
+/* .student-card:hover{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     scale: 1.02;
-}
+} */

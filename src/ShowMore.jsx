@@ -3,14 +3,16 @@ import './styles/ShowMore.css'
 
 
 function ShowMore({student}) {
+    
+    //change to percentages
     const currentTotal = student.codewars.current.total
     const scoreGoal = student.codewars.goal.total
 
     const targetGoal = Math.floor(currentTotal/scoreGoal * 100)
-    // const scorePercents = student.cohort.scores
+   
     
     
-
+    //state for notes
     const [note,setNote] = useState([]);
 
     const addNewNote = (formObj) => {
@@ -18,7 +20,7 @@ function ShowMore({student}) {
         const commenterName = formObj.target['commenter-name'].value;
         const comment = formObj.target.comment.value;
 
-       
+       //DO MORE RESEARCH
         const newNote = {
             id: Date.now(),
             commenterName,
